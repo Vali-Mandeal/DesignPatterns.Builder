@@ -1,11 +1,11 @@
-﻿using DesignPatterns.Builder.Models;
+﻿using DesignPatterns.Builder.V1.Models;
 
-namespace DesignPatterns.Builder.StringedInstrumentBuilder
+namespace DesignPatterns.Builder.V1.StringedInstrumentBuilder
 {
     /// <summary>
-    /// The 'Builder' abstract class
+    /// The 'AbstractBuilder' abstract class
     /// </summary>
-    abstract class Builder
+    public abstract class AbstractBuilder
     {
         protected StringedInstrument _stringedInstrument;
             

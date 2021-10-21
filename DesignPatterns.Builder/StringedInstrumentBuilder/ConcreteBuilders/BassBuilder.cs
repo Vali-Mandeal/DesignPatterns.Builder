@@ -1,8 +1,8 @@
-﻿using DesignPatterns.Builder.Models;
+﻿using DesignPatterns.Builder.V1.Models;
 
-namespace DesignPatterns.Builder.StringedInstrumentBuilder.ConcreteBuilders
+namespace DesignPatterns.Builder.V1.StringedInstrumentBuilder.ConcreteBuilders
 {
-    class BassBuilder : Builder
+    public class BassBuilder : AbstractBuilder
     {
         public BassBuilder()
         {
@@ -30,7 +30,7 @@ namespace DesignPatterns.Builder.StringedInstrumentBuilder.ConcreteBuilders
 
         public override void BuildColor()
         {
-            _stringedInstrument["color"] = "Aged natural matte";
+            _stringedInstrument["color"] = "Aged Natural Matte";
         }
     }
 }

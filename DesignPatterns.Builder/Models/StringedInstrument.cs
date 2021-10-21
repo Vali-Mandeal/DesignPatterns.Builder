@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DesignPatterns.Builder.Models
+namespace DesignPatterns.Builder.V1.Models
 {
     /// <summary>
     /// The 'Product' class

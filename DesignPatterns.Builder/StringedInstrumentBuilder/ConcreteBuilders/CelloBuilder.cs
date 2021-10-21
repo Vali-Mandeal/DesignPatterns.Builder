@@ -1,8 +1,8 @@
-﻿using DesignPatterns.Builder.Models;
+﻿using DesignPatterns.Builder.V1.Models;
 
-namespace DesignPatterns.Builder.StringedInstrumentBuilder.ConcreteBuilders
+namespace DesignPatterns.Builder.V1.StringedInstrumentBuilder.ConcreteBuilders
 {
-    class CelloBuilder : Builder
+    public class CelloBuilder : AbstractBuilder
     {
         public CelloBuilder()
         {
@@ -25,12 +25,12 @@ namespace DesignPatterns.Builder.StringedInstrumentBuilder.ConcreteBuilders
 
         public override void BuildFrets()
         {
-            _stringedInstrument["frets"] = "fret less";
+            _stringedInstrument["frets"] = "fretless";
         }
 
         public override void BuildColor()
         {
-            _stringedInstrument["color"] = "tiny wood";
+            _stringedInstrument["color"] = "Tiny Wood";
         }
     }
 }

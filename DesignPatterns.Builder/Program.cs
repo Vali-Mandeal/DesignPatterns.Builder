@@ -1,8 +1,6 @@
-﻿using DesignPatterns;
-using DesignPatterns.Builder.StringedInstrumentBuilder;
-using DesignPatterns.Builder.StringedInstrumentBuilder.ConcreteBuilders;
-
-namespace DesignPatterns.Builder
+﻿using DesignPatterns.Builder.V1.StringedInstrumentBuilder.ConcreteBuilders;
+using DesignPatterns.Builder.V1.StringedInstrumentBuilder;
+namespace DesignPatterns.Builder.V1
 {
     class Program
     {
@@ -10,17 +8,17 @@ namespace DesignPatterns.Builder
         {
             InstrumentShop shop = new();
 
-            StringedInstrumentBuilder.Builder builder = new GuitarBuilder();
-            shop.Construct(builder);
-            builder.StringedInstrument.Show();
+            AbstractBuilder abstractBuilder = new GuitarBuilder();
+            shop.Construct(abstractBuilder);
+            abstractBuilder.StringedInstrument.Show();
 
-            builder = new BassBuilder();
-            shop.Construct(builder);
-            builder.StringedInstrument.Show();
+            abstractBuilder = new BassBuilder();
+            shop.Construct(abstractBuilder);
+            abstractBuilder.StringedInstrument.Show();
 
-            builder = new CelloBuilder();
-            shop.Construct(builder);
-            builder.StringedInstrument.Show();
+            abstractBuilder = new CelloBuilder();
+            shop.Construct(abstractBuilder);
+            abstractBuilder.StringedInstrument.Show();
         }   
     }
 }

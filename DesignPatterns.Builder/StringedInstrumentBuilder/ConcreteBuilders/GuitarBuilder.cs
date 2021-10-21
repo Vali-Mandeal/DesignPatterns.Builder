@@ -1,8 +1,8 @@
-﻿using DesignPatterns.Builder.Models;
+﻿using DesignPatterns.Builder.V1.Models;
 
-namespace DesignPatterns.Builder.StringedInstrumentBuilder.ConcreteBuilders
+namespace DesignPatterns.Builder.V1.StringedInstrumentBuilder.ConcreteBuilders
 {
-    class GuitarBuilder : Builder
+    public class GuitarBuilder : AbstractBuilder
     {
         public GuitarBuilder()
         {

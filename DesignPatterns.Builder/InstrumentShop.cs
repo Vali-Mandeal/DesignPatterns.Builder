@@ -1,22 +1,20 @@
-﻿namespace DesignPatterns.Builder
+﻿namespace DesignPatterns.Builder.V1
 {
-    using StringedInstrumentBuilder;
-
     /// <summary>
     /// The 'Director' class
     /// </summary>
     class InstrumentShop
     {
         // You can have multiple ways of constructing different type of instruments
-        // For example, this director could receive a Percussion Instrument Builder
+        // For example, this director could receive a Percussion Instrument AbstractBuilder
 
-        public void Construct(Builder builder)
+        public void Construct(StringedInstrumentBuilder.AbstractBuilder abstractBuilder)
         {
-            builder.BuildName();
-            builder.BuildStrings();
-            builder.BuildScale();
-            builder.BuildFrets();
-            builder.BuildColor();
+            abstractBuilder.BuildName();
+            abstractBuilder.BuildStrings();
+            abstractBuilder.BuildScale();
+            abstractBuilder.BuildFrets();
+            abstractBuilder.BuildColor();
         }
     }
 }
